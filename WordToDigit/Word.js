@@ -9,7 +9,8 @@ fs.readFileSync(process.argv[2]).toString().split('\n').forEach(function (line) 
   if (line != "") {
     var nums = line.split(";");
     var num = '';
-    for(var i = 0; i < nums.length; i++) {
+    var len = num.length;
+    for(var i = 0; i < len; i++) {
       num += arr[nums[i]];
     }
     console.log(num);
